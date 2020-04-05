@@ -1,0 +1,260 @@
+@charset="UTF-8"
+
+body {
+	font-family: Verdana, sans-serif;
+	height:100%;
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.2), 0 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.topnav a {
+  float: left;
+  display: inline-block;
+  color: #696969;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-weight: 5;
+  font-size: 16px;
+  border-bottom: solid transparent;
+}
+
+.navbar-logo {
+  float: left;
+  padding: 3px 4px;
+}
+
+.navbar-logo:hover {
+  border-bottom: solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: solid #00704A;
+  color: #00704A;
+}
+
+.topnav a.active {
+  border-bottom:  solid #00704A;
+  color: #00704A;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sitename {
+    font-size: 20px;
+  }
+}
+
+div.left {
+	left: 0;
+	position: absolute;
+	width: 0.05%;
+}
+
+div.right {
+	left: 90%;
+	position: absolute;
+	width: 0.05%
+}
+
+div.middle {
+	left: 10%;
+	position: absolute;
+	width: 80%;
+	box-shadow:  0 16px 32px 16px rgba(0,0,0,0.2), 0 24px 40px 16px rgba(0,0,0,0.19);
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+
+.text {
+	color: #f2f2f2;
+	font-size: 40px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px #000000;
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 30px;}
+}
+
+.homepara {
+	float: Left;
+	text-align: justify;
+	width: 45%;
+	padding: 5px;
+	color: #696969;
+}
+
+
+.den h2:hover {
+	transform: scale(1.1);
+}
+
+.polaroid {
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10x;
+}
+.polaroid img {
+  -webkit-filter: grayscale(0%);
+   filter: grayscale(0%);
+}
+
+.polaroid img:hover {
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+}
+
+.line {
+  float: left;
+  width: 50%;
+}
+
+.line:hover {
+  	
+}
+.container {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+
+
+.endfloat {
+  content: "";
+  clear: both;
+  display: table;
+ }
+
+.MenuBlock {
+	font-family: Lato;
+	font-weight: 60;
+	color: white;
+	background-color: black;
+	overflow-x:auto;
+}
+
+.endfloat {
+  content: "";
+  clear: both;
+  display: table;
+ }
+
+.holder {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+
+.centertext {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .centertext h1 {font-size: 20px;}
+  .heading h2 {font-size: 20px;}
+  .iconsbar .fa{font-size: 10px;}
+}
+
+
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 992px){
+    .modal-content,.modal-content2,.modal-content3 {
+        width: 100%;
+    }
+}
+
+.heading h2 {
+		-webkit-animation-name: heading; 
+		-webkit-animation-duration: 10s; 
+		animation-name: heading;
+		animation-duration: 10s;
+}
+
+.grey h2:hover {
+	transform: scale(1.1);
+}
+
+p.iconsbar .fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #696969;
+}
