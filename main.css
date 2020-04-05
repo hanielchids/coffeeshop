@@ -237,6 +237,10 @@ img {vertical-align: middle;}
     .modal-content,.modal-content2,.modal-content3 {
         width: 100%;
     }
+	.MenuBlock {
+	font-family: Lato;
+	font-weight: 8;
+	}
 }
 
 .heading h2 {
